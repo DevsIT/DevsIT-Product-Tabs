@@ -200,14 +200,14 @@ if combine_pretext is false, the text before the first <h6> will be shown above 
   </div>
   {% endif %}
   {% endif %}
-  
+
 </div>
 
 
 {% else %}
 {{ description }}
 
-{% if section.settings.enable_shipping != blank or section.settings.enable_return != blank or pretext != blank %}
+{% if section.settings.enable_shipping != blank or section.settings.enable_return != blank %}
 <div class="acc"> 
   {% if section.settings.enable_shipping != blank %}
   <div class="acc__card">
@@ -238,8 +238,8 @@ if combine_pretext is false, the text before the first <h6> will be shown above 
 
 
 
-{% if section.settings.enable_shipping != blank or section.settings.enable_return != blank %}
-  
+{% if section.settings.enable_shipping != blank or section.settings.enable_return != blank or pretext != blank %}
+
 <script>
   /* jQuery
 ================================================== */
@@ -315,25 +315,3 @@ if combine_pretext is false, the text before the first <h6> will be shown above 
 </style>
 {% endif %}
 
-
-
-
-
-
-
-
-
-  {
-        "type": "header",
-        "content": "Tabs"
-    },
-    {
-      "type": "page",
-      "id": "enable_shipping",
-      "label":"Shipping Page"
-    },
-    {
-      "type": "page",
-      "id": "enable_return",
-      "label":"Return Page"
-    }
