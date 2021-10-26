@@ -1,3 +1,26 @@
+    {
+        "type": "header",
+        "content": "Tabs"
+    },
+    {
+      "type": "page",
+      "id": "enable_shipping",
+      "label":"Shipping Page"
+    },
+    {
+      "type": "page",
+      "id": "enable_return",
+      "label":"Return Page"
+    }
+
+
+
+
+
+
+
+
+
 {% comment %}
 if combine_pretext is false, the text before the first <h6> will be shown above all tabs, otherwise added to the first tab
 {% endcomment %}
