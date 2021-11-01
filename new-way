@@ -22,9 +22,6 @@
 
 
 
-
-
-
 {% comment %}
 if combine_pretext is false, the text before the first <h6> will be shown above all tabs, otherwise added to the first tab
 {% endcomment %}
@@ -299,7 +296,7 @@ if combine_pretext is false, the text before the first <h6> will be shown above 
   }
 
   .acc__card {
-    margin: 15px 0;
+    margin: 5px 0;
     position: relative;
   }
 
@@ -309,7 +306,7 @@ if combine_pretext is false, the text before the first <h6> will be shown above 
     color: #212121;
     cursor: pointer;
     display: block;
-    padding: 1em 1.5em;
+    padding: 5px 10px;
     position: relative;
     text-align: left;
     border: 1px solid #999;
@@ -322,23 +319,27 @@ if combine_pretext is false, the text before the first <h6> will be shown above 
     position: absolute;
     right: 10px;
     content: " ";
-    top: 17px;
-    transform: rotate(-45deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
     transition: all 0.2s ease-in-out;
   }
   .acc__title.active::after {
-    transform: rotate(45deg);
-    transition: all 0.2s ease-in-out;
+    transform: translateY(-50%) rotate(45deg);
+    margin-top: -2px;
   }
-
   .acc__panel {
     background: #fff;
     color: #212121;
     display: none;
     margin: 0;
-    padding: 15px 25px;
+    padding: 5px 3px;
     text-align: left;
+  }
+  .acc__panel > p:first-child {
+    margin-top: 0px;
+  }
+  .acc__panel > p:last-child {
+    margin-bottom: 0px;
   }
 </style>
 {% endif %}
-
